@@ -9,6 +9,6 @@ with col1:
 with col2:
     s = st.slider("σ", 0.1, 10.0, step = 0.01, value = 1.0)
 fig, ax = plt.subplots()
-x = np.linspace(m - np.abs(m), m + np.abs(m))
+x = np.linspace(m - np.abs(m), m + np.abs(m), 200)
 ax.plot(x, gauss(x, m, s))
 st.pyplot(fig)
